@@ -14,7 +14,7 @@
         <input type="text" name="" id="" v-model="unicorn.spottedWhere.lat">
         <hr>
         <label for="">Lng</label>
-        <input type="text" name="" id="" v-model="unicorn.spottedWhere.lan">
+        <input type="text" name="" id="" v-model="unicorn.spottedWhere.lon">
         <hr>
         <label for="">Tidpunkt</label>
         <input type="datetime" name="" id="" v-model="unicorn.spottedWhen">
