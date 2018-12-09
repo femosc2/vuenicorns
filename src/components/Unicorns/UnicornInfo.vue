@@ -47,9 +47,6 @@
                 })
 
         },
-        created: function() {
-            getUnicorn(clickedUnicorn);
-        }
         }
     }
 </script>

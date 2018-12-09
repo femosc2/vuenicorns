@@ -26,7 +26,7 @@ import UnicornInfo from "./UnicornInfo"
             chosenUnicorn(index) {
                 this.clickedUnicorn = index
                 console.log(index)
-            }
+            },
         },
         components: {
             UnicornInfo

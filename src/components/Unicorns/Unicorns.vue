@@ -1,11 +1,13 @@
 <template>
     <div>
         <unicorn-list :unicorns="unicorns" />
+        <unicorn-create />
     </div>
 </template>
 
 <script>
 import UnicornList from "./UnicornList.vue"
+import UnicornCreate from "./UnicornCreate.vue"
 
 export default {
     data: function() {
@@ -15,6 +17,7 @@ export default {
     },
     components: {
         UnicornList,
+        UnicornCreate
     },
     methods: {
         getUnicorns() {
