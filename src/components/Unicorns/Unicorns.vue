@@ -1,19 +1,20 @@
 <template>
     <div>
-        <ul>
-            <li v-for="unicorn in unicorns"> {{ unicorn.id}} : {{ unicorn.name }} </li>
-        </ul>
-        <button @click="getUnicorns">Fetch Unicorns </button>
+        <unicorn-list :unicorns="unicorns" />
     </div>
 </template>
 
 <script>
+import UnicornList from "./UnicornList.vue"
+
 export default {
     data: function() {
         return {
             unicorns: [],
-
         }
+    },
+    components: {
+        UnicornList,
     },
     methods: {
         getUnicorns() {
@@ -28,9 +29,11 @@ export default {
                     }
                     this.unicorns = resultArray;
                 })
-                console.log(data)
         },
     },
+    created() {
+        this.getUnicorns();
+    }
 }
 </script>
 
