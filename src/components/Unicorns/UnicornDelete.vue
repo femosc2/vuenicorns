@@ -25,9 +25,10 @@ export default {
                     console.log(response)
                 }, error => {
                 console.log(error)}
-                )}
-    }
-    
+                )
+                this.$emit("unicornDeleted", this.unicorn.id);
+    }  
+}
 }
 </script>
 

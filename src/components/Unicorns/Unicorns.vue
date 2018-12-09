@@ -1,6 +1,6 @@
 <template>
     <div>
-        <unicorn-list :unicorns="unicorns" />
+        <unicorn-list @unicornCreated="getUnicorns" @unicornDeleted="getUnicorns" :unicorns="unicorns" />
         <unicorn-create />
         <unicorn-delete />
     </div>
